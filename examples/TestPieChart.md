@@ -107,11 +107,12 @@ searchType: task.done, task.notdone
 searchTarget: Say I love you, Say I love you
 datasetName: Done, NotDone
 pie:
-    label: '{{0.5/28.5*100}}%, B {{4/28.5*100}}%, C {{6/28.5*100}}%, D {{8/28.5*100}}%, E {{10/28.5*100}}%'
-    extLabel:  'A {{0.5/28.5*100}}%, {{4/28.5*100}}%, {{6/28.5*100}}%, {{8/28.5*100}}%, {{10/28.5*100}}%'
-    data: '0.5, 4, 6, 8, 10'
-    dataColor: '#4daf4a,#377eb8,#ff7f00,#984ea3,#e41a1c'
+    label: '{{0.5/11*100}}%, B {{0.4/11*100}}%, C {{0.1/11*100}}%, D {{8/11*100}}%, E {{9.7/11*100}}%, F {{0.3/28.5*100}}'
+    extLabel:  'A {{0.5/11*100}}%, B {{0.4/11*100}}%, C {{0.1/11*100}}%, D {{8/11*100}}%, E {{9.7/11*100}}, F {{0.3/11*100}}%'
+    data: '0.5, 0.4, 0.1, 8, 9.7, 0.3'
+    dataColor: '#4daf4a,#377eb8,#ff7f00,#984ea3,#e41a1c,#aaaaaa'
     ratioInnerRadius: 0.4
     hideLabelLessThan: 0.03
     showExtLabelOnlyIfNoLabel: true
 ```
+Resolve cases of overlapping external labels by shifting y-value of the external label.
